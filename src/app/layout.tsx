@@ -1,15 +1,15 @@
 import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {HOME_OG_IMAGE_URL} from "@/lib/constants";
+import type {Metadata} from "next";
+import {Inter} from "next/font/google";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `남남이루의 Blog`,
+  description: `웹 프론트엔드 개발자의 블로그입니다. 개발 기록을 담습니다.`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ko">
       <head>
         <link
           rel="apple-touch-icon"
