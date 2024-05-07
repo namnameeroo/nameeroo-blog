@@ -1,13 +1,16 @@
-import Link from "next/link";
+import {ThemeButton} from "./themeButton";
+import {BlogName} from "./blog-name";
 
 const Header = () => {
   return (
-    <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
-      <Link href="/" className="hover:underline">
-        Blog
-      </Link>
-      .
-    </h2>
+    // <div className="flex items-center">
+    <header className="navbar p-0">
+      <div className={"flex-1 text-xl font-bold"}>
+        <BlogName />
+      </div>
+      <ThemeButton />
+    </header>
+    // </div>
   );
 };
 
