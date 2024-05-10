@@ -1,7 +1,10 @@
-# Why
-Tistory에서 markdown으로 포스팅할 때 일관성 떨어지는 UI가 불편하고, 시간이 오래 걸려서 뽀짝뽀짝 작업해보는 개인 기술 블로그
+# nameeroo-blog
+> 뽀짝뽀짝 작업해보는 개인 기술 블로그
 
-# Status
+## Why
+Tistory에서 markdown으로 포스팅할 때 일관성 떨어지는 UI가 불편했고, 이로 인해 포스팅 하는 시간이 오래 걸렸다.
+
+## Status
 - 개발진행중
 - [배포중](https://nameeroo-blog.vercel.app/)
 
@@ -17,6 +20,7 @@ Tistory에서 markdown으로 포스팅할 때 일관성 떨어지는 UI가 불�
     - [ ] 카테고리 pinned 추가
 3. 게시글 상세
     - [ ] 코드 블럭 UI 개선
+4. Footer 블로거 프로필
 
 ## 부가 기능
 
