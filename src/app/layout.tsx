@@ -3,6 +3,7 @@ import type {Metadata} from "next";
 import {Inter} from "next/font/google";
 
 import "./globals.css";
+import useTheme from "../hooks/useTheme";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -19,6 +20,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const setInitialThemeScript = `(function() {
+    ${getTheme.toString()}
+    getTheme();
+
+  })()`;
+
+  function getTheme() {
+    console.log("getTheme");
+    const theme = () => useTheme();
+    if (theme() === "dark") {
+      document.body.setAttribute("data-theme", "dark");
+    } else {
+      document.body.setAttribute("data-theme", "light");
+    }
+  }
+
   return (
     <html lang="ko">
       <head>
@@ -53,6 +70,12 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        {/* <script
+          dangerouslySetInnerHTML={{
+            __html: setInitialThemeScript,
+          }}
+          suppressHydrationWarning
+        ></script> */}
       </head>
       <body className={inter.className}>
         <div className="min-h-screen">{children}</div>
