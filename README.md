@@ -38,7 +38,7 @@ Tistory에서 markdown으로 포스팅할 때 일관성 떨어지는 UI가 불�
 
 ## 1. 프레임워크 : Next.js
 
-## 2. 디자인 : tailwind | chakra
+## 2. 디자인 : tailwind | daisyui
 
 ## 3. 글 작성 : mdx
 
